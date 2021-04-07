@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo List Tutorial</title>
+  </head>
+  <body>
+    <h1>Todo List App</h1>
+    
+    <!-- form for creating todo -->
+    <form id="todo-form">
+      <input type="text" placeholder="text..." id="todoText">
+      <button type="submit">Add todo</button>
+    </form>
+    
+    <h2>List :</h2>
+    
+    <!-- form for our update todo -->
+    <div id="updateForm" style="display: none">
+      <input type="text"> 
+      <button onclick="updateTodo()">update</button>
+      <button onclick="cancel()">cancel</button>
+    </div>
+    
+    <!-- our todos will be display here -->
+    <ul id="todo-list">
+      
+    </ul>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
